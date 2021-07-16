@@ -1,5 +1,209 @@
- @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
-/* font-family: 'Shrikhand', cursive; */
-/* font-family: 'Roboto', sans-serif; */
+@font-face {
+  font-family: "roboto";
+  src: url("../font-family/Roboto/Roboto-Thin.ttf");
+}
+@font-face {
+  font-family: "shrikhand";
+  src: url("../font-family/Shrikland/Shrikhand-Regular.ttf");
+}
+a {
+  text-decoration: none;
+  color: black;
+}
 
+ul {
+  list-style-type: none;
+}
 
+h2 {
+  text-align: left;
+  margin-left: 20px;
+}
+
+h4 {
+  font-family: "shrikhand";
+}
+
+.button {
+  background: radial-gradient(ellipse farthest-corner at bottom right, #9356DC, #FF79DA);
+  color: white;
+  border: none;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+body {
+  font-family: "roboto";
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+header h1 .header__logo img {
+  width: 200px;
+  height: 40px;
+}
+
+header .header__flex {
+  display: flex;
+}
+header .header__flex a {
+  width: 10%;
+}
+header .header__flex h1 {
+  width: 90%;
+}
+header .header__flex h1 .header__logo {
+  width: 200px;
+  height: 40px;
+}
+header .header__vignette {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  text-align: left;
+  padding-top: 3px;
+}
+footer .footer__block h4 {
+  margin-left: 15px;
+}
+footer .footer__block .footer__list .footer__link {
+  color: white;
+}
+footer .footer__block .footer__list .footer__link i {
+  padding-right: 15px;
+}
+
+.local {
+  padding: 1px 0 1px 0;
+  background-color: #eaeaea;
+}
+.local i {
+  padding-right: 10px;
+}
+
+.book {
+  background-color: #f6f6f6;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.book .book__title {
+  width: 80%;
+  margin: auto;
+  font-weight: bold;
+  /*aide*/
+}
+.book .book__txt {
+  line-height: 25px;
+}
+
+.fonction .fonction__board {
+  list-style-type: none;
+}
+.fonction .fonction__board .fonction__list {
+  padding: 20px 0 20px 0;
+}
+.fonction .fonction__board .fonction__list .fonction__num {
+  background-color: #9356DC;
+  color: white;
+  padding: 3px;
+  font-size: 10px;
+  border-radius: 50%;
+  position: relative;
+  top: -2px;
+  left: -3px;
+}
+.fonction .fonction__board .fonction__list a {
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  padding: 10px 0 10px 0;
+}
+.fonction .fonction__board .fonction__list a i {
+  color: grey;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+}
+.restaurants .cards div {
+  width: 90%;
+}
+.restaurants .cards div .card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 25px 25px 0 0;
+}
+.restaurants .cards div .card .card__new {
+  background-color: #99E2D0;
+  color: #279e80;
+  position: relative;
+  top: -190px;
+  left: 110px;
+  padding: 3px 7px 3px 7px;
+  font-size: 15px;
+}
+.restaurants .cards div .card .card__flex {
+  display: flex;
+}
+.restaurants .cards div .card .card__flex .card__flex__txt {
+  width: 80%;
+}
+.restaurants .cards div .card .card__flex .cart__flex__icon {
+  width: 20%;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  position: relative;
+  top: -70px;
+  border-radius: 25px 25px 0 0;
+  padding: 10px 0 10px 0;
+}
+.menu .menu__title {
+  display: flex;
+  justify-content: space-between;
+}
+.menu .menu__title i {
+  margin-right: 20px;
+}
+.menu .menu__recipe {
+  text-align: left;
+  margin-left: 20px;
+}
+.menu .menu__recipe .menu__recipe__title {
+  margin: 0;
+  padding: 0;
+}
+.menu .menu__recipe .menu__recipe__list {
+  background-color: white;
+  border-radius: 25px;
+  padding-left: 10px;
+  display: flex;
+}
+.menu .menu__recipe .menu__recipe__list .menu__detail {
+  width: 80%;
+}
+.menu .menu__recipe .menu__recipe__list .menu__detail h4 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.menu .menu__recipe .menu__recipe__list .menu__detail p {
+  margin-top: 0;
+  padding-top: 0;
+}
+.menu .menu__recipe .menu__recipe__list .menu__prix {
+  width: 20%;
+}
+.menu .menu__recipe .menu__recipe__list .menu__check {
+  display: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

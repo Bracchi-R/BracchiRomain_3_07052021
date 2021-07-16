@@ -1,0 +1,21 @@
+footer {
+    background-color: #353535;
+    color: white;
+    text-align: left;
+    padding-top: 3px;
+
+    .footer__block {
+        h4 {
+            margin-left: 15px;
+        }
+        .footer__list {
+            .footer__link {
+                color: white;
+
+                i {
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+}

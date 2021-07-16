@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "roboto";
+    src: url("../font-family/Roboto/Roboto-Thin.ttf");
+}
+
+@font-face {
+    font-family: "shrikhand";
+    src: url("../font-family/Shrikland/Shrikhand-Regular.ttf");
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    text-align: left;
+    margin-left: 20px;
+}
+
+h4 {
+    font-family: "shrikhand";
+}
