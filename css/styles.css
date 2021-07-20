@@ -1,10 +1,10 @@
 @font-face {
   font-family: "roboto";
-  src: url("../font-family/Roboto/Roboto-Thin.ttf");
+  src: url("../font-family/Roboto/Roboto-Thin.ttf"), url("../font-family/Roboto/Roboto-Thin.ttf");
 }
 @font-face {
   font-family: "shrikhand";
-  src: url("../font-family/Shrikland/Shrikhand-Regular.ttf");
+  src: url("../font-family/Shrikhand/Shrikhand-Regular.ttf");
 }
 a {
   text-decoration: none;
@@ -79,6 +79,9 @@ footer .footer__block .footer__list .footer__link {
 }
 footer .footer__block .footer__list .footer__link i {
   padding-right: 15px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
 }
 
 .local {
@@ -97,8 +100,7 @@ footer .footer__block .footer__list .footer__link i {
 .book .book__title {
   width: 80%;
   margin: auto;
-  font-weight: bold;
-  /*aide*/
+  text-align: center;
 }
 .book .book__txt {
   line-height: 25px;
@@ -110,54 +112,75 @@ footer .footer__block .footer__list .footer__link i {
 .fonction .fonction__board .fonction__list {
   padding: 20px 0 20px 0;
 }
+.fonction .fonction__board .fonction__list a {
+  display: inline-block;
+  position: relative;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  padding: 10px 0 10px 0;
+  width: 90%;
+}
+.fonction .fonction__board .fonction__list a i {
+  color: grey;
+}
 .fonction .fonction__board .fonction__list .fonction__num {
   background-color: #9356DC;
   color: white;
   padding: 3px;
   font-size: 10px;
   border-radius: 50%;
-  position: relative;
-  top: -2px;
-  left: -3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: -13px;
+  height: 30px;
 }
-.fonction .fonction__board .fonction__list a {
-  background-color: #f6f6f6;
-  border-radius: 25px;
-  padding: 10px 0 10px 0;
-}
-.fonction .fonction__board .fonction__list a i {
-  color: grey;
+.fonction .fonction__board .fonction__list :hover {
+  background-color: #f5edff;
 }
 
 .restaurants {
   background-color: #f6f6f6;
 }
-.restaurants .cards div {
+.restaurants .cards > div {
+  width: 100%;
+}
+.restaurants .cards > div .card {
+  position: relative;
+  display: inline-block;
   width: 90%;
 }
-.restaurants .cards div .card img {
+.restaurants .cards > div .card img {
   width: 100%;
   height: 190px;
   object-fit: cover;
   border-radius: 25px 25px 0 0;
 }
-.restaurants .cards div .card .card__new {
+.restaurants .cards > div .card .card__new {
+  display: inline-block;
   background-color: #99E2D0;
   color: #279e80;
-  position: relative;
-  top: -190px;
-  left: 110px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
   padding: 3px 7px 3px 7px;
   font-size: 15px;
 }
-.restaurants .cards div .card .card__flex {
+.restaurants .cards > div .card .card__flex {
   display: flex;
+  justify-content: space-between;
 }
-.restaurants .cards div .card .card__flex .card__flex__txt {
-  width: 80%;
+.restaurants .cards > div .card .card__flex .card__flex__txt {
+  flex-grow: 1;
+  text-align: left;
 }
-.restaurants .cards div .card .card__flex .cart__flex__icon {
-  width: 20%;
+.restaurants .cards > div .card .card__flex .card__flex__txt h3 {
+  margin: 0;
+}
+.restaurants .cards > div .card .card__flex .card__flex__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu {
