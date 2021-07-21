@@ -1,6 +1,18 @@
 @font-face {
     font-family: "roboto";
-    src: url("../font-family/Roboto/Roboto-Thin.ttf"),url("../font-family/Roboto/Roboto-Thin.ttf");
+    src: url("../font-family/Roboto/Roboto-Black.ttf"),
+    url("../font-family/Roboto/Roboto-BlackItalic.ttf"),
+    url("../font-family/Roboto/Roboto-Bold.ttf"),
+    url("../font-family/Roboto/Roboto-BoldItalic.ttf"),
+    url("../font-family/Roboto/Roboto-Italic.ttf"),
+    url("../font-family/Roboto/Roboto-Light.ttf"),
+    url("../font-family/Roboto/Roboto-LightItalic.ttf"),
+    url("../font-family/Roboto/Roboto-Medium.ttf"),
+    url("../font-family/Roboto/Roboto-MediumItalic.ttf"),
+    url("../font-family/Roboto/Roboto-Regular.ttf"),
+    url("../font-family/Roboto/Roboto-Thin.ttf"),
+    url("../font-family/Roboto/Roboto-ThinItalic.ttf");
+    
 }
 
 @font-face {
@@ -25,3 +37,8 @@ h2 {
 h4 {
     font-family: "shrikhand";
 }
+
+.shadow {
+    box-shadow: .25rem .25rem 10px rgba(0,0,0,.5);
+}
+
