@@ -32,7 +32,7 @@ h4 {
   background: radial-gradient(ellipse farthest-corner at bottom right, #9356DC, #FF79DA);
   color: white;
   border: none;
-  padding: 20px;
+  padding: 20px 50px 20px 50px;
   border-radius: 50px;
 }
 
@@ -45,7 +45,7 @@ body {
   line-height: 35px;
 }
 
-header h1 .header__logo img {
+header h1 .header__logo {
   width: 200px;
   height: 40px;
 }
@@ -55,6 +55,11 @@ header .header__flex {
 }
 header .header__flex a {
   width: 10%;
+  position: absolute;
+}
+header .header__flex a i {
+  position: relative;
+  top: 30px;
 }
 header .header__flex h1 {
   width: 90%;
