@@ -20,10 +20,6 @@ h2 {
   margin-left: 20px;
 }
 
-h4 {
-  font-family: "shrikhand";
-}
-
 .shadow {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
@@ -82,6 +78,7 @@ footer {
   padding-bottom: 5px;
 }
 footer .footer__block h4 {
+  font-family: "shrikhand";
   margin-left: 15px;
 }
 footer .footer__block .footer__list {
@@ -142,7 +139,7 @@ footer .footer__block .footer__list .footer__link i {
 .fonction .fonction__board .fonction__list a i {
   color: grey;
   display: inline-block;
-  width: 15px;
+  width: 40px;
 }
 .fonction .fonction__board .fonction__list .fonction__num {
   background-color: #9356DC;
@@ -187,7 +184,7 @@ footer .footer__block .footer__list .footer__link i {
   position: absolute;
   top: 20px;
   right: 20px;
-  padding: 3px 7px 3px 7px;
+  padding: 3px 10px 3px 10px;
   font-size: 15px;
 }
 .restaurants .cards > div .card .card__flex {
@@ -210,7 +207,7 @@ footer .footer__block .footer__list .footer__link i {
   margin-right: 25px;
 }
 .restaurants .cards > div .card .card__flex .card__flex__icon :hover {
-  color: red;
+  background-color: red;
 }
 
 .menu {
@@ -223,6 +220,7 @@ footer .footer__block .footer__list .footer__link i {
 .menu .menu__title {
   display: flex;
   justify-content: space-between;
+  font-family: "shrikhand";
 }
 .menu .menu__title i {
   margin-right: 20px;
@@ -259,7 +257,9 @@ footer .footer__block .footer__list .footer__link i {
   width: 20%;
   display: flex;
   align-items: flex-end;
+  justify-content: flex-end;
   margin-bottom: 7px;
+  margin-right: 15px;
 }
 .menu .menu__recipe .menu__recipe__list .menu__check {
   display: none;

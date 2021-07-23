@@ -46,7 +46,7 @@
                 i {
                     color: grey;
                     display: inline-block;
-                    width: 15px;
+                    width: 40px;
                 }
             }
             .fonction__num {
@@ -95,7 +95,7 @@
                     position: absolute;
                     top: 20px; 
                     right: 20px;
-                    padding: 3px 7px 3px 7px;
+                    padding: 3px 10px 3px 10px;
                     font-size: 15px;
                 }
                 .card__flex {
@@ -118,7 +118,7 @@
                         margin-right: 25px;
 
                        :hover {
-                        color: red;
+                        background-color: red;
                        }
 
                     }
