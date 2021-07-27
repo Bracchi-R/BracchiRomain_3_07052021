@@ -1,9 +1,22 @@
 header {
+    
     h1 {
+       
+
         .header__logo {
             width: 200px;
             height: 40px;
         }
+    }
+}
+
+.header__index {
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+
+    h1 {
+        margin: 0;
     }
 }
 

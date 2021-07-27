@@ -1,19 +1,19 @@
-@font-face {
+/*@font-face {
     font-family: "roboto";
-    src: url("../font-family/Roboto/Roboto-Black.ttf"),
-    url("../font-family/Roboto/Roboto-BlackItalic.ttf"),
-    url("../font-family/Roboto/Roboto-Bold.ttf"),
-    url("../font-family/Roboto/Roboto-BoldItalic.ttf"),
-    url("../font-family/Roboto/Roboto-Italic.ttf"),
-    url("../font-family/Roboto/Roboto-Light.ttf"),
-    url("../font-family/Roboto/Roboto-LightItalic.ttf"),
-    url("../font-family/Roboto/Roboto-Medium.ttf"),
-    url("../font-family/Roboto/Roboto-MediumItalic.ttf"),
-    url("../font-family/Roboto/Roboto-Regular.ttf"),
-    url("../font-family/Roboto/Roboto-Thin.ttf"),
-    url("../font-family/Roboto/Roboto-ThinItalic.ttf");
+    src: url("../font-family/Roboto/Roboto-Regular.ttf") format("truetype"),
+    url("../font-family/Roboto/Roboto-Black.ttf") format("truetype"),
+    url("../font-family/Roboto/Roboto-BlackItalic.ttf") format("truetype"),
+    url("../font-family/Roboto/Roboto-Bold.ttf") format("truetype"),
+    url("../font-family/Roboto/Roboto-BoldItalic.ttf") format("truetype"),
+    url("../font-family/Roboto/Roboto-Italic.ttf") format("truetype"),
+    url("../font-family/Roboto/Roboto-Light.ttf") format("truetype"),
+    url("../font-family/Roboto/Roboto-LightItalic.ttf") format("truetype"),
+    url("../font-family/Roboto/Roboto-Medium.ttf") format("truetype"),
+    url("../font-family/Roboto/Roboto-MediumItalic.ttf") format("truetype"),
+    url("../font-family/Roboto/Roboto-Thin.ttf") format("truetype"),
+    url("../font-family/Roboto/Roboto-ThinItalic.ttf") format("truetype");
     
-}
+}*/
 
 @font-face {
     font-family: "shrikhand";
@@ -32,6 +32,7 @@ ul {
 h2 {
     text-align: left;
     margin-left: 20px;
+    font-weight: 700;
 }
 
 .shadow {

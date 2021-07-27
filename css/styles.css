@@ -1,7 +1,19 @@
-@font-face {
-  font-family: "roboto";
-  src: url("../font-family/Roboto/Roboto-Black.ttf"), url("../font-family/Roboto/Roboto-BlackItalic.ttf"), url("../font-family/Roboto/Roboto-Bold.ttf"), url("../font-family/Roboto/Roboto-BoldItalic.ttf"), url("../font-family/Roboto/Roboto-Italic.ttf"), url("../font-family/Roboto/Roboto-Light.ttf"), url("../font-family/Roboto/Roboto-LightItalic.ttf"), url("../font-family/Roboto/Roboto-Medium.ttf"), url("../font-family/Roboto/Roboto-MediumItalic.ttf"), url("../font-family/Roboto/Roboto-Regular.ttf"), url("../font-family/Roboto/Roboto-Thin.ttf"), url("../font-family/Roboto/Roboto-ThinItalic.ttf");
-}
+/*@font-face {
+    font-family: "roboto";
+    src: url("../font-family/Roboto/Roboto-Regular.ttf") format("truetype"),
+    url("../font-family/Roboto/Roboto-Black.ttf") format("truetype"),
+    url("../font-family/Roboto/Roboto-BlackItalic.ttf") format("truetype"),
+    url("../font-family/Roboto/Roboto-Bold.ttf") format("truetype"),
+    url("../font-family/Roboto/Roboto-BoldItalic.ttf") format("truetype"),
+    url("../font-family/Roboto/Roboto-Italic.ttf") format("truetype"),
+    url("../font-family/Roboto/Roboto-Light.ttf") format("truetype"),
+    url("../font-family/Roboto/Roboto-LightItalic.ttf") format("truetype"),
+    url("../font-family/Roboto/Roboto-Medium.ttf") format("truetype"),
+    url("../font-family/Roboto/Roboto-MediumItalic.ttf") format("truetype"),
+    url("../font-family/Roboto/Roboto-Thin.ttf") format("truetype"),
+    url("../font-family/Roboto/Roboto-ThinItalic.ttf") format("truetype");
+
+}*/
 @font-face {
   font-family: "shrikhand";
   src: url("../font-family/Shrikhand/Shrikhand-Regular.ttf");
@@ -18,6 +30,7 @@ ul {
 h2 {
   text-align: left;
   margin-left: 20px;
+  font-weight: 700;
 }
 
 .shadow {
@@ -34,6 +47,7 @@ h2 {
 
 body {
   font-family: "roboto";
+  font-weight: 400;
   width: 100%;
   text-align: center;
   margin: 0;
@@ -44,6 +58,15 @@ body {
 header h1 .header__logo {
   width: 200px;
   height: 40px;
+}
+
+.header__index {
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+.header__index h1 {
+  margin: 0;
 }
 
 header .header__flex {
@@ -135,11 +158,15 @@ footer .footer__block .footer__list .footer__link i {
   border-radius: 20px;
   padding: 15px 0 15px 0;
   width: 90%;
+  text-align: left;
 }
 .fonction .fonction__board .fonction__list a i {
   color: grey;
   display: inline-block;
   width: 40px;
+  padding-right: 15px;
+  padding-left: 35px;
+  text-align: center;
 }
 .fonction .fonction__board .fonction__list .fonction__num {
   background-color: #9356DC;
@@ -152,6 +179,9 @@ footer .footer__block .footer__list .footer__link i {
   left: -11px;
   width: 25px;
   height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .fonction .fonction__board .fonction__list :hover {
   background-color: #f5edff;
@@ -206,14 +236,22 @@ footer .footer__block .footer__list .footer__link i {
   align-items: center;
   margin-right: 25px;
 }
-.restaurants .cards > div .card .card__flex .card__flex__icon :hover {
-  background-color: red;
+.restaurants .cards > div .card .card__flex .card__flex__icon .love2 {
+  display: none;
+  transition: 0.4s ease-in-out;
+}
+.restaurants .cards > div .card .card__flex .card__flex__icon:hover .love1 {
+  display: none;
+}
+.restaurants .cards > div .card .card__flex .card__flex__icon:hover .love2 {
+  display: inline-block;
+  color: red;
 }
 
 .menu {
   background-color: #f6f6f6;
   position: relative;
-  top: -70px;
+  margin-top: -70px;
   border-radius: 25px 25px 0 0;
   padding: 10px 0 10px 0;
 }
@@ -224,6 +262,17 @@ footer .footer__block .footer__list .footer__link i {
 }
 .menu .menu__title i {
   margin-right: 20px;
+}
+.menu .menu__title .love2 {
+  display: none;
+  transition: 0.4s ease-in-out;
+}
+.menu .menu__title:hover .love1 {
+  display: none;
+}
+.menu .menu__title:hover .love2 {
+  display: inline-block;
+  color: red;
 }
 .menu .menu__recipe {
   text-align: left;
@@ -240,20 +289,24 @@ footer .footer__block .footer__list .footer__link i {
   display: flex;
   margin-bottom: 20px;
 }
-.menu .menu__recipe .menu__recipe__list .menu__info {
+.menu .menu__recipe .menu__recipe__list .menu_flex {
+  display: flex;
+  flex-grow: 1;
+}
+.menu .menu__recipe .menu__recipe__list .menu_flex .menu__info {
   width: 80%;
 }
-.menu .menu__recipe .menu__recipe__list .menu__info h4 {
+.menu .menu__recipe .menu__recipe__list .menu_flex .menu__info h4 {
   margin-top: 7px;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.menu .menu__recipe .menu__recipe__list .menu__info p {
+.menu .menu__recipe .menu__recipe__list .menu_flex .menu__info p {
   margin-top: 0;
   padding-top: 0;
   margin-bottom: 7px;
 }
-.menu .menu__recipe .menu__recipe__list .menu__prix {
+.menu .menu__recipe .menu__recipe__list .menu_flex .menu__prix {
   width: 20%;
   display: flex;
   align-items: flex-end;
@@ -262,7 +315,12 @@ footer .footer__block .footer__list .footer__link i {
   margin-right: 15px;
 }
 .menu .menu__recipe .menu__recipe__list .menu__check {
-  display: none;
+  position: absolute;
+  right: -100%;
+  transition: 1s;
+}
+.menu .menu__recipe .menu__recipe__list:hover .menu__check {
+  right: 0;
 }
 .menu .button {
   display: inline-block;
