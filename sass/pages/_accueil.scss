@@ -19,6 +19,7 @@
     }
     .book__txt {
         line-height: 25px;
+        font-weight: 100;
     }
     .button {
         display: inline-block;
@@ -70,6 +71,10 @@
             }
             :hover {
                 background-color: #f5edff;
+
+                i {
+                    color: $color-primaire;
+                }
             }   
         }
     }
@@ -116,6 +121,10 @@
 
                         h3 {
                             margin: 0;
+                        }
+
+                        span {
+                            font-weight: 100;
                         }
                     }
                     .card__flex__icon {
