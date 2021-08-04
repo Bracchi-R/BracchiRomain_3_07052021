@@ -267,9 +267,33 @@ footer .footer__block .footer__list .footer__link i {
 }
 .restaurants .cards > div .card .card__flex .card__flex__icon:hover .love2 {
   display: inline-block;
-  color: red;
+  background: radial-gradient(ellipse farthest-corner at bottom right, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
+@media screen and (min-width: 970px) {
+  .fonction .fonction__board {
+    display: flex;
+    justify-content: space-between;
+  }
+  .fonction .fonction__board .fonction__list {
+    width: 33%;
+  }
+  .fonction .fonction__board .fonction__list a i {
+    padding-left: 20px;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .cards > div {
+    max-width: 50%;
+  }
+}
 .menu {
   background-color: #f6f6f6;
   position: relative;
@@ -294,7 +318,10 @@ footer .footer__block .footer__list .footer__link i {
 }
 .menu .menu__title:hover .love2 {
   display: inline-block;
-  color: red;
+  background: radial-gradient(ellipse farthest-corner at bottom right, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .menu .menu__recipe {
   text-align: left;
@@ -304,6 +331,17 @@ footer .footer__block .footer__list .footer__link i {
   margin-top: 40px;
   padding: 0;
   font-weight: 100;
+  position: relative;
+}
+.menu .menu__recipe .menu__recipe__title::after {
+  content: "";
+  display: inline-block;
+  height: 3px;
+  width: 50px;
+  background-color: #99E2D0;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
 }
 .menu .menu__recipe .menu__recipe__list {
   background-color: white;
@@ -401,6 +439,20 @@ footer .footer__block .footer__list .footer__link i {
 .menu .button {
   display: inline-block;
   margin: 25px 0 25px 0;
+}
+
+@media screen and (min-width: 970px) {
+  .menu {
+    width: 95%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .menu .menu__recipe {
+    display: flex;
+  }
+  .menu .menu__recipe .menu__box {
+    width: 20%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -144,12 +144,47 @@
                             }
                             .love2 {
                                  display: inline-block;
-                                 color: red;
+                                 background: radial-gradient(ellipse farthest-corner at bottom right, $color-primaire,$color-secondaire );
+                                background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                -webkit-background-clip: text;
                             }
                         }
                     }                   
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width:970px) {
+    .fonction {
+        .fonction__board {
+            display: flex;
+            justify-content: space-between;
+
+            .fonction__list {
+                width: 33%;
+
+                a {
+                    i {
+                        padding-left: 20px;
+                    }
+                }            
+            }
+
+        }
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        > div {
+            max-width: 50%;
+            
+
         }
     }
 }

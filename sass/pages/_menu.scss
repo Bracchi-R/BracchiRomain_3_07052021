@@ -24,7 +24,11 @@
             }
             .love2 {
                  display: inline-block;
-                 color: red;
+                 background: radial-gradient(ellipse farthest-corner at bottom right, $color-primaire,$color-secondaire );
+                 background-clip: text;
+                 -webkit-text-fill-color: transparent;
+                 -webkit-background-clip: text;
+        
                  
             }
         }
@@ -38,6 +42,18 @@
             margin-top: 40px;
             padding:0;
             font-weight: 100;
+            position: relative;
+
+            &::after {
+                content: "";
+                display: inline-block;
+                height: 3px;
+                width: 50px;
+                background-color:$color-tertiaire;
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+            }
 
         }
         .menu__recipe__list {
@@ -159,5 +175,21 @@
     .button {
         display: inline-block;
         margin: 25px 0 25px 0;
+    }
+}
+
+@media screen and (min-width:970px) {
+    .menu {
+        width: 95%;
+        margin-left: 3%;
+        margin-right: 3%;
+
+        .menu__recipe {
+            display: flex;
+            
+            .menu__box {
+                width: 20%;
+            } 
+        }   
     }
 }
