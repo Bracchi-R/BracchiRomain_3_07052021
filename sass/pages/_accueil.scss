@@ -1,3 +1,25 @@
+.loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    animation-name: loader ;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    z-index: 10000;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+  
+    .loader__item {
+        height: 30%;
+        width: 25%;
+        
+        
+        
+    }
+}
+
 .local {
     padding: 1px 0 1px 0;
     background-color: #eaeaea;
@@ -143,8 +165,8 @@
                                 display: none;
                             }
                             .love2 {
-                                 display: inline-block;
-                                 background: radial-gradient(ellipse farthest-corner at bottom right, $color-primaire,$color-secondaire );
+                                display: inline-block;
+                                background: radial-gradient(ellipse farthest-corner at bottom right, $color-primaire,$color-secondaire );
                                 background-clip: text;
                                 -webkit-text-fill-color: transparent;
                                 -webkit-background-clip: text;
