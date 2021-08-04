@@ -159,15 +159,13 @@ footer .footer__block .footer__list .footer__link i {
   position: fixed;
   height: 100%;
   width: 100%;
-  animation-name: loader;
-  animation-delay: 2s;
-  animation-fill-mode: both;
   z-index: 10000;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .loader .loader__item {
+  animation: loader 2s linear none;
   height: 30%;
   width: 25%;
 }
