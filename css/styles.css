@@ -1,16 +1,16 @@
 @keyframes menu {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(50px) scale(0.9);
   }
   60% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(50px) scale(0.9);
   }
   100% {
     opacity: 1;
     margin-top: 0px;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
 @keyframes loader {
@@ -35,9 +35,27 @@
     opacity: 0;
   }
 }
+@keyframes opa {
+  0% {
+    z-index: 1000;
+    opacity: 1;
+  }
+  99% {
+    z-index: 1000;
+    opacity: 1;
+  }
+  100% {
+    z-index: 1000;
+    opacity: 0;
+  }
+}
 /*@font-face {
     font-family: "roboto";
-    src: url("../font-family/Roboto/Roboto-Regular.ttf") format("truetype"),
+    src: url("../font-family/Roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}*/
+/*
     url("../font-family/Roboto/Roboto-Black.ttf") format("truetype"),
     url("../font-family/Roboto/Roboto-BlackItalic.ttf") format("truetype"),
     url("../font-family/Roboto/Roboto-Bold.ttf") format("truetype"),
@@ -49,8 +67,7 @@
     url("../font-family/Roboto/Roboto-MediumItalic.ttf") format("truetype"),
     url("../font-family/Roboto/Roboto-Thin.ttf") format("truetype"),
     url("../font-family/Roboto/Roboto-ThinItalic.ttf") format("truetype");
-
-}*/
+    */
 @font-face {
   font-family: "shrikhand";
   src: url("../font-family/Shrikhand/Shrikhand-Regular.ttf");
@@ -159,15 +176,20 @@ footer .footer__block .footer__list .footer__link i {
   position: fixed;
   height: 100%;
   width: 100%;
-  z-index: 10000;
   display: flex;
   align-items: center;
   justify-content: center;
+  animation-name: opa;
+  animation-duration: 3s;
+  z-index: -4000;
+  opacity: 0;
+  background: rgba(246, 246, 246, 0.651);
 }
 .loader .loader__item {
-  animation: loader 2s linear none;
-  height: 30%;
-  width: 25%;
+  animation-name: loader;
+  animation-duration: 3s;
+  height: 300px;
+  width: 300px;
 }
 
 .local {
@@ -205,13 +227,19 @@ footer .footer__block .footer__list .footer__link i {
   padding: 20px 0 20px 0;
 }
 .fonction .fonction__board .fonction__list a {
-  display: inline-block;
+  display: flex;
   position: relative;
   background-color: #f6f6f6;
   border-radius: 20px;
   padding: 15px 0 15px 0;
   width: 90%;
   text-align: left;
+  align-items: center;
+}
+.fonction .fonction__board .fonction__list a span {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .fonction .fonction__board .fonction__list a i {
   color: grey;
@@ -305,7 +333,7 @@ footer .footer__block .footer__list .footer__link i {
 .restaurants .cards > div .card .card__flex .card__flex__icon:hover .love2 {
   display: inline-block;
   background: radial-gradient(ellipse farthest-corner at bottom right, #9356DC, #FF79DA);
-  background-clip: text;
+  /*background-clip: text;*/
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -356,13 +384,14 @@ footer .footer__block .footer__list .footer__link i {
 .menu .menu__title:hover .love2 {
   display: inline-block;
   background: radial-gradient(ellipse farthest-corner at bottom right, #9356DC, #FF79DA);
-  background-clip: text;
+  /*background-clip: text;*/
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 .menu .menu__recipe {
   text-align: left;
-  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .menu .menu__recipe .menu__recipe__title {
   margin-top: 40px;
@@ -381,6 +410,7 @@ footer .footer__block .footer__list .footer__link i {
   left: 0;
 }
 .menu .menu__recipe .menu__recipe__list {
+  position: relative;
   background-color: white;
   border-radius: 25px;
   padding-left: 10px;
@@ -390,6 +420,8 @@ footer .footer__block .footer__list .footer__link i {
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   transition: 0.6s ease-in-out;
+  overflow: hidden;
+  animation-fill-mode: both;
 }
 .menu .menu__recipe .menu__recipe__list .menu_flex {
   display: flex;
@@ -431,7 +463,7 @@ footer .footer__block .footer__list .footer__link i {
 .menu .menu__recipe .menu__recipe__list .menu__check {
   position: absolute;
   background-color: #99E2D0;
-  right: -100%;
+  right: -82px;
   padding: 24px;
   border-radius: 0 25px 25px 0;
   transition: 1s;
@@ -450,31 +482,31 @@ footer .footer__block .footer__list .footer__link i {
   animation-delay: 0s;
 }
 .menu .menu_pop1 {
-  animation-delay: 0.2s;
+  animation-delay: 0.04s;
 }
 .menu .menu_pop2 {
-  animation-delay: 0.4s;
+  animation-delay: 0.08s;
 }
 .menu .menu_pop3 {
-  animation-delay: 0.6s;
+  animation-delay: 0.12s;
 }
 .menu .menu_pop4 {
-  animation-delay: 0.8s;
+  animation-delay: 0.16s;
 }
 .menu .menu_pop5 {
-  animation-delay: 1s;
+  animation-delay: 0.2s;
 }
 .menu .menu_pop6 {
-  animation-delay: 1.2s;
+  animation-delay: 0.24s;
 }
 .menu .menu_pop7 {
-  animation-delay: 1.4s;
+  animation-delay: 0.28s;
 }
 .menu .menu_pop8 {
-  animation-delay: 1.6s;
+  animation-delay: 0.32s;
 }
 .menu .menu_pop9 {
-  animation-delay: 1.8s;
+  animation-delay: 0.36s;
 }
 .menu .button {
   display: inline-block;
@@ -487,8 +519,9 @@ footer .footer__block .footer__list .footer__link i {
     margin-left: 3%;
     margin-right: 3%;
   }
-  .menu .menu__recipe .menu__box {
-    width: 30%;
+  .menu .menu__recipe {
+    width: 28%;
+    display: inline-block;
   }
 }
 

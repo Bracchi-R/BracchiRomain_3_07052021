@@ -2,20 +2,21 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    
-    z-index: 10000;
-    display:flex;
+    display: flex;
     align-items:center;
     justify-content:center;
+    animation-name: opa;
+    animation-duration: 3s;
+    z-index: -4000;
+    opacity: 0;
+    background: rgba(246, 246, 246, 0.651);
     
   
     .loader__item {
-        animation: loader 2s linear none;
-        height: 30%;
-        width: 25%;
-        
-        
-        
+        animation-name: loader;
+        animation-duration: 3s;
+        height: 300px;
+        width: 300px;
     }
 }
 
@@ -58,13 +59,21 @@
             padding: 20px 0 20px 0;
 
             a {
-                display: inline-block;
+                display: flex;
                 position: relative;
                 background-color: #f6f6f6;
                 border-radius: 20px;
                 padding: 15px 0 15px 0;
                 width: 90%;
                 text-align: left;
+                align-items: center;
+
+                span {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    
+                }
 
                 i {
                     color: grey;
@@ -73,6 +82,7 @@
                     padding-right: 15px;
                     padding-left: 35px;
                     text-align: center;
+
                 }
             }
             .fonction__num {
@@ -166,7 +176,7 @@
                             .love2 {
                                 display: inline-block;
                                 background: radial-gradient(ellipse farthest-corner at bottom right, $color-primaire,$color-secondaire );
-                                background-clip: text;
+                                /*background-clip: text;*/
                                 -webkit-text-fill-color: transparent;
                                 -webkit-background-clip: text;
                             }

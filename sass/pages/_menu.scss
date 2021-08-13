@@ -25,7 +25,7 @@
             .love2 {
                  display: inline-block;
                  background: radial-gradient(ellipse farthest-corner at bottom right, $color-primaire,$color-secondaire );
-                 background-clip: text;
+                 /*background-clip: text;*/
                  -webkit-text-fill-color: transparent;
                  -webkit-background-clip: text;
         
@@ -36,7 +36,8 @@
 
     .menu__recipe {
         text-align: left;
-        margin-left: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
 
         .menu__recipe__title {
             margin-top: 40px;
@@ -57,6 +58,7 @@
 
         }
         .menu__recipe__list {
+            position: relative;
             background-color: white;
             border-radius: 25px;
             padding-left: 10px;
@@ -66,6 +68,8 @@
             animation-duration: 2s;
             animation-timing-function: ease-in-out;
             transition: .6s ease-in-out;
+            overflow: hidden;
+            animation-fill-mode: both;
             
 
             .menu_flex {
@@ -114,7 +118,7 @@
             .menu__check {
                 position: absolute;
                 background-color:$color-tertiaire;    
-                right: -100%;
+                right: -82px;
                 padding: 24px;
                 border-radius: 0 25px 25px 0;
                 transition: 1s;
@@ -141,39 +145,39 @@
     }
 
     .menu_pop1 {
-        animation-delay: 0.2s;   
+        animation-delay: 0.04s;   
     }
 
     .menu_pop2 {
-        animation-delay: 0.4s;
+        animation-delay: 0.08s;
     }
 
     .menu_pop3 {
-        animation-delay: 0.6s;
+        animation-delay: 0.12s;
     }
 
     .menu_pop4 {
-        animation-delay: 0.8s;
+        animation-delay: 0.16s;
     }
 
     .menu_pop5 {
-        animation-delay: 1s;
+        animation-delay: 0.20s;
     }
 
     .menu_pop6 {
-        animation-delay: 1.2s;
+        animation-delay: 0.24s;
     }
 
     .menu_pop7 {
-        animation-delay: 1.4s;
+        animation-delay: 0.28s;
     }
 
     .menu_pop8 {
-        animation-delay: 1.6s;
+        animation-delay: 0.32s;
     }
 
     .menu_pop9 {
-        animation-delay: 1.8s;
+        animation-delay: 0.36s;
     }
 
     .button {
@@ -189,11 +193,9 @@
         margin-right: 3%;
 
         .menu__recipe {
-            
-            
-            .menu__box {
-                width: 30%;
-            } 
+                width: 28%;
+                display: inline-block;
+                
         }   
     }
 }
