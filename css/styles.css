@@ -1,3 +1,4 @@
+/* sass sass/main.scss:css/styles.css --watch */
 @keyframes menu {
   0% {
     opacity: 0;
@@ -109,7 +110,7 @@ body {
   line-height: 35px;
 }
 
-header h1 .header__logo {
+header div .header__logo {
   width: 200px;
   height: 40px;
 }
@@ -120,7 +121,9 @@ header h1 .header__logo {
   z-index: 2;
 }
 .header__index h1 {
-  margin: 0;
+  margin: auto;
+  width: 90%;
+  font-family: "shrikhand";
 }
 
 header .header__flex {
@@ -136,10 +139,8 @@ header .header__flex a i {
 }
 header .header__flex h1 {
   width: 90%;
-}
-header .header__flex h1 .header__logo {
-  width: 200px;
-  height: 40px;
+  font-family: "shrikhand";
+  margin-left: 30px;
 }
 header .header__vignette {
   width: 100%;
@@ -467,6 +468,7 @@ footer .footer__block .footer__list .footer__link i {
   padding: 24px;
   border-radius: 0 25px 25px 0;
   transition: 1s;
+  cursor: pointer;
 }
 .menu .menu__recipe .menu__recipe__list .menu__check i {
   color: white;
