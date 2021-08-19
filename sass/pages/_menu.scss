@@ -132,7 +132,12 @@
 
             &:hover {
                 .menu__check {
-                    right: 0;   
+                    right: 0;
+
+                    i {
+                        animation: checkrotate;
+                        animation-duration: 1s; 
+                    }
                 }
                 .menu_flex {
                     width: calc(100% - 80px);
